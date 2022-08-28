@@ -1,0 +1,535 @@
+body {
+    background-image: url("Images/fondo.webp");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+#titleProyecto {
+    background-color: rgba(116, 164, 174, 0.697);
+    margin: 0;
+    text-align: center;
+    color: white;
+    height: 50px;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+.card-title {
+    color: cadetblue;
+    font-size: 22px;
+}
+
+.card-text {
+    font-size: small;
+    text-align: center;
+}
+
+.card-text-al {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.card-img-top {
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.card {
+    margin: auto;
+    border-color: cadetblue;
+    opacity: 95%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.288);
+    margin: auto;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 18px;
+    border: 1px solid #3d7377;
+    border-radius: 37px;
+    background: #63bbc2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#63bbc2), to(#3d7377));
+    background: -moz-linear-gradient(top, #63bbc2, #3d7377);
+    background: linear-gradient(to bottom, #63bbc2, #3d7377);
+    font: normal normal normal 16px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    border: 1px solid #4c9095;
+    background: #77e0e9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77e0e9), to(#498a8f));
+    background: -moz-linear-gradient(top, #77e0e9, #498a8f);
+    background: linear-gradient(to bottom, #77e0e9, #498a8f);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    background: #3d7377;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d7377), to(#3d7377));
+    background: -moz-linear-gradient(top, #3d7377, #3d7377);
+    background: linear-gradient(to bottom, #3d7377, #3d7377);
+}
+
+.containerRes {
+    background-color: rgba(116, 164, 174, 0.818);
+    align-items: center;
+    display: none;
+    vertical-align: middle;
+    margin: 30px;
+    text-align: center;
+}
+
+#containerAlimentos {
+    padding-bottom: 30px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    display: none;
+    vertical-align: middle;
+}
+
+#p1 {
+    font-size: 16px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    color: #498a8f;
+    height: 150px;
+    padding-top: 13px;
+}
+
+#p2 {
+    font-size: 16px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    color: #498a8f;
+    height: 170px;
+    padding-top: 13px;
+    display: none;
+}
+
+#interpretacionImc{
+    vertical-align: middle;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#compararPeso{
+    margin-bottom: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#resTMB {
+    font-size: 16px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    color: #498a8f;
+    height: 50px;
+    padding-top: 13px;
+}
+
+#resComida {
+    font-size: 16px;
+    background-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    color: #498a8f;
+    margin: 30px;
+}
+
+
+
+#titlePorc {
+    color: white;
+    background-color: rgba(95, 158, 160, 0.626);
+}
+
+.containerForm {
+    background-color: rgba(116, 164, 174, 0.818);
+    align-items: center;
+    vertical-align: middle;
+    margin: 30px;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#titleForm {
+    color: cadetblue;
+    background-color: rgb(255, 255, 255);
+}
+
+.form-control {
+    width: 80px;
+    color: cadetblue;
+    margin-left: 10px;
+    height: 25px;
+    border-radius: 37px;
+    display: inline;
+}
+
+.formCalculadoras {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.form-label {
+    font-size: 16px;
+}
+
+.form-radio {
+    margin-left: 10px;
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.labelGen {
+    margin-left: 5px;
+}
+
+#containerFormIMC {
+    display: none;
+}
+
+#containerFormTMB {
+    display: none;
+}
+
+#inputNombre {
+    width: 300px;
+    color: cadetblue;
+}
+
+#inputPeso {
+    color: cadetblue;
+}
+
+#inputAltura{
+    color: cadetblue;
+}
+#inputEdad2{
+    color: cadetblue;
+}
+#inputPeso2{
+    color: cadetblue;
+}
+
+#inputAltura2{
+    color: cadetblue;
+}
+
+#inputCalorias{
+    color: cadetblue;
+}
+#inputPorcion{
+    color: cadetblue;
+}
+
+#containerFormAlimentos {
+    display: none;
+}
+
+.selectGroup {
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 250px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding-left: 7px;
+    height: 25px;
+    outline: 0;
+    border: 0;
+    border-radius: 37px;
+    background: white;
+    color: cadetblue;
+    font-size: 1em;
+    position: relative;
+    transition: all 0.25s ease;
+}
+
+.buttonForm {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 18px;
+    border: 1px solid #3d7377;
+    border-radius: 37px;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#c1cece));
+    background: -moz-linear-gradient(top, #ffffff, #c1cece);
+    background: linear-gradient(to bottom, #ffffff, #c1cece);
+    font: normal normal normal 16px trebuchet ms;
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.buttonForm:hover,
+.buttonForm:focus {
+    border: 1px solid #4c9095;
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e2ebeb), to(#94c3c6));
+    background: -moz-linear-gradient(top, #e2ebeb, #94c3c6);
+    background: linear-gradient(to bottom, #e2ebeb, #94c3c6);
+    color: white;
+    text-decoration: none;
+}
+
+.buttonForm:active {
+    background: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d7377), to(#3d7377));
+    background: -moz-linear-gradient(top, #3d7377, #3d7377);
+    background: linear-gradient(to bottom, #3d7377, #3d7377);
+}
+
+#alert{
+    color: red;
+}
+
+.fa-face-frown{
+    transform: scale(1.3)
+}
+
+.fa-face-sad-tear{
+    transform: scale(1.3)
+}
+
+.fa-face-grimace{
+    transform: scale(1.3)
+}
+
+.fa-face-laugh-wink{
+    transform: scale(1.3)
+}
+
+#mid-alert{
+    color: orange;
+}
+
+#low-alert{
+    color: rgb(218, 214, 117);
+}
+
+#normal{
+    color: rgb(123, 201, 123);
+}
+
+#low{
+    color: orange;
+}
+
+#trends{
+    display: inline;
+}
+
+#containerResultadosIMC{
+    text-align: center;
+    align-items: center;
+}
+
+.fa-scale-balanced{
+    color: rgb(92, 148, 212);
+    transform: scale(1.3);
+}
+
+.fa-arrow-trend-down{
+    color: red;
+    transform: scale(1.3);
+}
+
+.fa-arrow-trend-up{
+    color: rgb(123, 201, 123);
+    transform: scale(1.3);
+}
+
+#mostrarAlim{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#botonAlim{
+    margin-top: 10px;
+   text-align: center;
+}
+
+.fa-trash-can{
+    transform: scale(1);
+
+}
+
+#botonAlim:hover,
+#botonAlim:focus {
+    border-color: red;
+    background: #fe030341;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fe030341), to(white));
+    background: -moz-linear-gradient(top, #fe030341, white);
+    background: linear-gradient(to bottom, #fe030341, white);
+    color: black;
+    text-decoration: none;
+}
+
+.card-header{
+    background-color: rgba(255, 255, 255, 0.639);
+    font-size: 22px;
+}
+
+.swal2-styled.swal2-confirm.swalBtnAlim {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 18px;
+    border: 1px solid #3d7377;
+    border-radius: 37px;
+    background: #63bbc2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#63bbc2), to(#3d7377));
+    background: -moz-linear-gradient(top, #63bbc2, #3d7377);
+    background: linear-gradient(to bottom, #63bbc2, #3d7377);
+    font: normal normal normal 16px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.swal2-styled.swal2-confirm.swalBtnAlim:active {
+    background: #3d7377;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d7377), to(#3d7377));
+    background: -moz-linear-gradient(top, #3d7377, #3d7377);
+    background: linear-gradient(to bottom, #3d7377, #3d7377);
+}
+
+
+.swal2-styled.swal2-confirm.swalBtnAlim:focus {
+    border: 1px solid #4c9095;
+    background: #77e0e9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77e0e9), to(#498a8f));
+    background: -moz-linear-gradient(top, #77e0e9, #498a8f);
+    background: linear-gradient(to bottom, #77e0e9, #498a8f);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.swal2-styled.swal2-confirm.swalBtnAlim:hover
+{
+    border: 1px solid #4c9095;
+    background: #77e0e9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77e0e9), to(#d3edee));
+    background: -moz-linear-gradient(top, #77e0e9, #d3edee);
+    background: linear-gradient(to bottom, #77e0e9, #d3edee);
+    color: cadetblue;
+    text-decoration: none;
+}
+
+.swal2-title.swalTitle1{
+    color: cadetblue;
+}
+
+.swal2-html-container{
+    text-align: center;
+}
+
+.swal2-popup.swal2-modal.swal2-icon-warning.swal2-show{
+    border-radius: 30px;
+}
+
+.fa-circle-info {
+    cursor: pointer;
+}
+.fa-circle-info:hover {
+    color: orange;
+}
+
+.divTable{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swal2-confirm.swalBtn.swal2-styled{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 18px;
+    border: 1px solid #3d7377;
+    border-radius: 37px;
+    background: #63bbc2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#63bbc2), to(#3d7377));
+    background: -moz-linear-gradient(top, #63bbc2, #3d7377);
+    background: linear-gradient(to bottom, #63bbc2, #3d7377);
+    font: normal normal normal 16px trebuchet ms;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.swal2-confirm.swalBtn.swal2-styled:active {
+    background: #3d7377;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3d7377), to(#3d7377));
+    background: -moz-linear-gradient(top, #3d7377, #3d7377);
+    background: linear-gradient(to bottom, #3d7377, #3d7377);
+}
+
+
+.swal2-confirm.swalBtn.swal2-styled:focus {
+    border: 1px solid #4c9095;
+    background: #77e0e9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77e0e9), to(#498a8f));
+    background: -moz-linear-gradient(top, #77e0e9, #498a8f);
+    background: linear-gradient(to bottom, #77e0e9, #498a8f);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.swal2-confirm.swalBtn.swal2-styled:hover
+{
+    background: -webkit-gradient(linear, left top, left bottom, from(#77e0e9), to(#d3edee));
+    background: -moz-linear-gradient(top, #77e0e9, #d3edee);
+    background: linear-gradient(to bottom, #77e0e9, #d3edee);
+    color: cadetblue;
+}
+
+.swal2-title.swalTitle{
+    color: cadetblue;
+}
+
+.swal2-title.titleTmb{
+    color: cadetblue;
+}
+
+#totalCals-div{
+    background-color: white !important;
+    color: cadetblue !important;
+    margin: 30px;
+    height: 35px;
+    vertical-align: middle;
+    padding: 5px;
+    display: none;
+}

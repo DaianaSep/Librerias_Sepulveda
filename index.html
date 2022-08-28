@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="titleProyecto">FitApp</h1>
+        <div class="row">
+            <div class="col-sm-4 sm-2">
+                <div class="card" style="width: 22rem;">
+                    <img src="Images/imc.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora IMC</h5>
+                        <p class="card-text">Usa esta calculadora para conocer tu Índice de Masa Corporal</p>
+                        <button class="button" id="imc">Calcular IMC</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 sm-2">
+                <div class="card" style="width: 22rem;">
+                    <img src="Images/calculadora-de-calorias (1).png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora TMB</h5>
+                        <p class="card-text">Usa esta calculadora para conocer tu Tasa Metabólica Basal</p>
+                        <button class="button" id="tmb">Calcular TMB</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 sm-2">
+                <div class="card" style="width: 22rem;">
+                    <img src="Images/anotar.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"> Registra tus Alimentos </h5>
+                        <p class="card-text">Usa esta herramienta para registrar tus alimentos diarios</p>
+                        <button class="button" id="alimentos">Registrar alimentos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- forms -->
+        <!-- form CalculadoraIMC -->
+        <div class="containerForm" id="containerFormIMC">
+            <h3 class="titleForm" id="titleForm">Completa con tus datos</h3>
+            <form id="formCalculadoraIMC" class="formCalculadoras">
+                <div class=" mb-3">
+                    <label class="form-label">Género:</label>
+                    <input class="form-radio" type="radio" id="hombre" name="genero" value="Hombre" required>
+                    <label class="labelGen" for="hombre">Hombre</label>
+                    <input class="form-radio" type="radio" id="mujer" name="genero" value="Mujer" required>
+                    <label class="labelGen" for="mujer">Mujer</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Peso en kg:</label>
+                    <input type="number" class="form-control" id="inputPeso" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Altura en cm:</label>
+                    <input type="number" class="form-control" id="inputAltura" min="1" required>
+                </div>
+                <div>
+                    <button type="submit" class="buttonForm">Mostrar Resultado</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- form CalculadoraTMB -->
+        <div class="containerForm" id="containerFormTMB">
+            <h3 class="titleForm" id="titleForm">Completa con tus datos</h3>
+            <form id="formCalculadoraTMB" class="formCalculadoras">
+                <div class=" mb-3">
+                    <label class="form-label">Género:</label>
+                    <input class="form-radio" type="radio" id="hombre" name="genero2" value="Hombre" required>
+                    <label class="labelGen" for="hombre">Hombre</label>
+                    <input class="form-radio" type="radio" id="mujer" name="genero2" value="Mujer" required>
+                    <label class="labelGen" for="mujer">Mujer</label>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Edad:</label>
+                    <input type="number" class="form-control" id="inputEdad2" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Peso en kg:</label>
+                    <input type="number" class="form-control" id="inputPeso2" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Altura en cm:</label>
+                    <input type="number" class="form-control" id="inputAltura2" min="1" required>
+                </div>
+                <div>
+                    <button type="submit" class="buttonForm">Mostrar Resultado</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- form Registro alimentos -->
+        <div class="containerForm" id="containerFormAlimentos">
+            <h3 class="titleForm" id="titleForm">Registra tus alimentos del día</h3>
+            <form id="formAlimentos" class="formCalculadoras">
+                <div class="mb-3">
+                    <label class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="inputNombre" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Grupo de alimentos:</label>
+                    <select id="selectGrupo" class="selectGroup" required>
+                        <option value="" disabled selected>Seleccione...</option>
+                        <option value="FyV">Frutas y verduras</option>
+                        <option value="PyL">Proteínas y legumbres</option>
+                        <option value="Lacteos">Lácteos</option>
+                        <option value="HyC">Hidratos y cereales</option>
+                        <option value="GyA">Grasas y aceites</option>
+                        <option value="Dulces">Dulces</option>
+                    </select>
+                    <i></i>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Calorías cada 100 g:</label>
+                    <input type="number" class="form-control" id="inputCalorias" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Porción en g:</label>
+                    <input type="number" class="form-control" id="inputPorcion" min="1" required>
+                </div>
+                <div>
+                    <button type="submit" class="buttonForm">Añadir</button>
+                    <button id="mostrarAlim" type="button" class="buttonForm">Mostrar Alimentos</button>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- contenedores con resultados del form -->
+        <div class="containerRes" id="containerResultadosIMC">
+            <h3 class="title" id="titleResultados">Resultado IMC</h3>
+            <div id="interpretacionImc">
+                <p id="p1"></p>
+                <button class="buttonForm" id="compararPeso">Comparar con último peso</button>
+                <p id="p2"></p>
+            </div>
+        </div>
+        <div class="containerRes" id="containerResultadosTMB">
+            <h3 class="title" id="titleResultadosTMB">Resultado TMB</h3>
+            <p id="resTMB"></p>
+        </div>
+        <div class="containerRes" id="containerAlimentos">
+            <h3 class="title" id="titleComidas">Alimentos Registrados</h3>
+            <div class="row" id="resComida">
+            </div>
+            <button class="buttonForm" id="totalCals">Ver Calorías totales</button>
+        </div>
+        <div id="totalCals-div">
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+    <script src="scripts/calculadoraIMC.js"></script>
+    <script src="scripts/calculadoraTMB.js"></script>
+    <script src="scripts/registroComidas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e5eb0cd7d7.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
